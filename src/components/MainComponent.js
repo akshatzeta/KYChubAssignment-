@@ -15,7 +15,7 @@ const MainComponent = ({ comparedProducts, addToCompare, removeFromCompare }) =>
       <div className="flex-1 p-4 overflow-auto">
         <Routes>
           <Route path="/" element={<ProductDetails addToCompare={addToCompare} comparedProducts={comparedProducts} />} />
-          <Route path="/compare" element={<CompareProducts comparedProducts={comparedProducts} removeFromCompare={removeFromCompare} />} />
+          <Route path="/compare" element={<CompareProducts comparedProducts={comparedProducts} removeFromCompare={removeFromCompare} addToCompare={addToCompare}  />} />
         </Routes>
       </div>
     </div>
